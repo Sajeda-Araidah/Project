@@ -1,0 +1,26 @@
+nav ul li {
+    display :inline;
+    font-size: xx-large;
+    color:lightyellow;
+    background-color:mediumpurple;
+    padding: 30px;
+
+}
+
+img{
+height: 100px;
+width: 50px;
+float: right;
+}
+
+
+#pp{
+    font-size:large;
+    background-color:mediumturquoise ;
+    text-align: center;
+
+}
+h1{
+
+padding-top: 20px;;
+}
