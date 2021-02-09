@@ -13,6 +13,30 @@ if (YourAge == 'yes' || YourAge == 'y') {
 }
 console.log(YourAge);
 
+// 6th qustion 
+let numOfTry = 4;
+let hiddenum = 40;
+let numGame = prompt('Select some number and save it in your mind !!');
+while (numOfTry) {
+
+    if (numGame < hiddenum) {
+        alert(YourName + '  the guess  “too low " ');
+    } else if (numGame > hiddenum) {
+        alert(YourName + '  the guess  “too high" ');
+    } else {
+        alert("you guess  the number it's  " + hiddenum + '  Correct Answer');
+        break;
+    }
+
+    numOfTry -= 1;
+    numGame = prompt('please try again you have : ' + numOfTry + ' remaining!  ');
+
+    if (!numOfTry) {
+        break;
+    }
+}
+
+
 let YourBackground = prompt("Are you Backgroud IT");
 YourBackground = YourBackground.toLowerCase();
 if (YourBackground == 'yes' || YourBackground == 'y') {
@@ -32,11 +56,33 @@ if (knowe == 'yes' || knowe == 'y') {
 }
 console.log(knowe);
 
-let coures = prompt("Do you learn new coures?");
-coures = coures.toLowerCase();
-if (coures == 'yes' || coures == 'y') {
+
+// 7th Question 
+let attempts = 6;
+let listOfCouress = ['html', 'css', 'sql', 'ccna', 'js', 'jqury'];
+let courses = prompt("Guess What ASAC's couress!! ");
+while (attempts) {
+    for (let i = 0; i < listOfCouress.length; i++) {
+        if (courses === listOfCouress[i]) {
+            alert('you guess  the couress its  '+ listOfCouress[i] + '  Correct Answer');
+            console.log("Roqia");
+            break;
+        }
+        attempts -= 1;
+        courses = prompt('please try again you have : ' + attempts + ' remaining!  ');
+    }
+    if (!attempts) {
+        break;
+    }
+}
+
+
+
+let c = prompt("Do you learn new coures?");
+c = c.toLowerCase();
+if (c == 'yes' || c == 'y') {
     alert("Teel Me About this courses");
-} else if (coures == 'no' || coures == 'n') {
+} else if (c == 'no' || c == 'n') {
     alert("You Sould That ");
 }
-console.log(coures);
+console.log(c);
