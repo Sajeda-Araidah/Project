@@ -1,4 +1,4 @@
-nav ul li {
+ nav  ul li  {
     display :inline;
     font-size: xx-large;
     color:lightyellow;
@@ -23,4 +23,8 @@ float: right;
 h1{
 
 padding-top: 20px;;
+}
+
+body{
+    background-color:gray;
 }
