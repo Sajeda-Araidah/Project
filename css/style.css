@@ -1,30 +1,65 @@
- nav  ul li  {
-    display :inline;
-    font-size: xx-large;
+ nav  ul  {
+   
+    font-size: x-large;
     color:lightyellow;
     background-color:mediumpurple;
     padding: 30px;
+    padding-left: 650px;
+    text-align: left;
 
 }
-
-img{
-height: 100px;
-width: 50px;
-float: right;
+.li{
+    display :inline;
+    padding-left: 30px;
 }
+
 
 
 #pp{
     font-size:large;
     background-color:mediumturquoise ;
     text-align: center;
+    height: 300px;
+    padding-top: 100px;
 
 }
 h1{
 
 padding-top: 20px;;
+text-align: center;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
     background-color:gray;
+}
+div{
+    display :inline;
+    padding-left:200px;
+    margin-left: 50px;
+    border: blue 3px ;
+    background-color:white ;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: left;
+    height: 110px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+}
+
+
+ #div2{
+    background-color:lightblue ;
+    height: 400px;
+    padding-top: 100px;
+    margin-top: 150px;
+    
+
+
+}
+
+
+img{
+    height: 120px;
+    width: 300px;
 }

@@ -1,5 +1,5 @@
 'use strict'
-let score =0;
+let score = 0;
 let YourName = prompt("What is Your Name ?");
 alert("Welcom  " + YourName + ' ' + "Lets play with us ");
 
@@ -7,7 +7,7 @@ let YourAge = prompt("Are You Age Between 20 and 30")
 YourAge = YourAge.toLowerCase();;
 if (YourAge == 'yes' || YourAge == 'y') {
     alert("Welcom To you");
-    score+=1;
+    score += 1;
 } else if (YourAge == 'no' || YourAge == 'n') {
     alert("You age not Age Between 20 and 30");
 }
@@ -25,8 +25,10 @@ while (numOfTry) {
         alert(YourName + '  the guess  “too high" ');
     } else {
         alert("you guess  the number it's  " + hiddenum + '  Correct Answer');
+        score += 1;
         break;
-        score+=1;
+       
+
     }
 
     numOfTry -= 1;
@@ -36,14 +38,14 @@ while (numOfTry) {
         break;
     }
 }
-alert("The Correct answer is "+hiddenum+"  ") ; 
+alert("The Correct answer is " + hiddenum + "  ");
 
 
 let YourBackground = prompt("Are you Backgroud IT");
 YourBackground = YourBackground.toLowerCase();
 if (YourBackground == 'yes' || YourBackground == 'y') {
     alert("DEVELOPER");
-    score+=1;
+    score += 1;
 } else if (YourBackground == 'no' || YourBackground == 'n') {
     alert("NOT DEVELOPER");
 }
@@ -54,7 +56,7 @@ let knowe = prompt("Did You hear about ASAC ?");
 knowe = knowe.toLowerCase();
 if (knowe == 'yes' || knowe == 'y') {
     alert("Amazing");
-    score+=1;
+    score += 1;
 } else if (knowe == 'no' || knowe == 'n') {
     alert("NOT YET ");
 }
@@ -69,16 +71,16 @@ myloop: while (attempts) {
     attempts -= 1;
     for (let i = 0; i < listOfCouress.length; i++) {
         if (courses === listOfCouress[i]) {
-            alert('you guess  the couress its  '+ listOfCouress[i] + '  Correct Answer');
-            score+=1;
-            break myloop; 
+            alert('you guess  the couress its  ' + listOfCouress[i] + '  Correct Answer');
+            score += 1;
+            break myloop;
         }
-        
-          }
+
+    }
     courses = prompt('please try again you have : ' + attempts + ' remaining!  ');
 
 }
-alert("The Correct answer is "+listOfCouress+"  ") ; 
+alert("The Correct answer is " + listOfCouress + "  ");
 
 
 
@@ -86,7 +88,7 @@ let c = prompt("Do you learn new coures?");
 c = c.toLowerCase();
 if (c == 'yes' || c == 'y') {
     alert("Tell Me About this courses");
-    score+=1;
+    score += 1;
 } else if (c == 'no' || c == 'n') {
     alert("You Sould That ");
 }
@@ -94,13 +96,13 @@ console.log(c);
 
 
 let haveCar = prompt("Do You Have Car");
-haveCar =  haveCar.toLowerCase();
-if ( haveCar == 'yes' ||  haveCar== 'y') {
+haveCar = haveCar.toLowerCase();
+if (haveCar == 'yes' || haveCar == 'y') {
     alert("You Have Car");
-    score+=1;
-} else if ( haveCar == 'no' ||  haveCar == 'n') {
+    score += 1;
+} else if (haveCar == 'no' || haveCar == 'n') {
     alert("You  Don't Have Car");
 }
-console.log( haveCar);
+console.log(haveCar);
 
-alert('you answer '+ score + '  /7 Correct Answer Thank You for Your Time ');
+alert('you answer ' + score + '  /7 Correct Answer Thank You for Your Time ');
