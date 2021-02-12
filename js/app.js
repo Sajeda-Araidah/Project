@@ -19,9 +19,10 @@ function question1() {
 
 
 // 6th qustion 
+
 function question6() {
     let numOfTry = 4;
-    let hiddenum = 40;
+   let hiddenum = 40;
     let numGame = prompt('Select some number and save it in your mind !!');
     while (numOfTry) {
 
@@ -44,9 +45,9 @@ function question6() {
         }
 
     }
-}
 
-alert("The Correct answer is " + hiddenum + "  ");
+
+alert("The Correct answer is " + hiddenum + "  ");}
 
 
 function question3() {
@@ -87,8 +88,6 @@ function question7() {
                 alert('you guess  the couress its  ' + listOfCouress[i] + '  Correct Answer');
                 score += 1;
                 break myloop;
-
-
             }
             attempts -= 1;
             courses = prompt('please try again you have : ' + attempts + ' remaining!  ');
@@ -97,7 +96,7 @@ function question7() {
         }
     }
 
-    alert("The Correct answer is " + listOfCouress + "  ");
+    alert("The Correct answer is " + listOfCouress + "  "); }
 
 
 
