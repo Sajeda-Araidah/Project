@@ -82,7 +82,7 @@ function question7() {
     let listOfCouress = ['html', 'css', 'sql', 'ccna', 'js', 'jqury'];
     let courses = prompt("Guess What ASAC's couress!! ");
     myloop: while (attempts) {
-        attempts -= 1;
+       
         for (let i = 0; i < listOfCouress.length; i++) {
             if (courses === listOfCouress[i]) {
                 alert('you guess  the couress its  ' + listOfCouress[i] + '  Correct Answer');
@@ -91,11 +91,12 @@ function question7() {
             }
             attempts -= 1;
             courses = prompt('please try again you have : ' + attempts + ' remaining!  ');
-        }
+        
         if (!attempts) {
+            
         }
     }
-
+    }
     alert("The Correct answer is " + listOfCouress + "  "); }
 
 
